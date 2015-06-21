@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DBA1FF9A1B3694FB00ED60D6 /* JsonPreferences.h in Headers */ = {isa = PBXBuildFile; fileRef = DBA1FF991B3694FB00ED60D6 /* JsonPreferences.h */; };
+		DBA1FF9C1B3694FB00ED60D6 /* JsonPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA1FF9B1B3694FB00ED60D6 /* JsonPreferences.m */; };
+		DBA1FF9E1B3694FB00ED60D6 /* JsonPreferences.tiff in Resources */ = {isa = PBXBuildFile; fileRef = DBA1FF9D1B3694FB00ED60D6 /* JsonPreferences.tiff */; };
+		DBA1FFA11B3694FB00ED60D6 /* JsonPreferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBA1FF9F1B3694FB00ED60D6 /* JsonPreferences.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DBA1FF941B3694FB00ED60D6 /* JsonPreferences.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JsonPreferences.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBA1FF981B3694FB00ED60D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBA1FF991B3694FB00ED60D6 /* JsonPreferences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JsonPreferences.h; sourceTree = "<group>"; };
+		DBA1FF9B1B3694FB00ED60D6 /* JsonPreferences.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JsonPreferences.m; sourceTree = "<group>"; };
+		DBA1FF9D1B3694FB00ED60D6 /* JsonPreferences.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = JsonPreferences.tiff; sourceTree = "<group>"; };
+		DBA1FFA01B3694FB00ED60D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/JsonPreferences.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBA1FF901B3694FB00ED60D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DBA1FF8A1B3694FB00ED60D6 = {
+			isa = PBXGroup;
+			children = (
+				DBA1FF961B3694FB00ED60D6 /* JsonPreferences */,
+				DBA1FF951B3694FB00ED60D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DBA1FF951B3694FB00ED60D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBA1FF941B3694FB00ED60D6 /* JsonPreferences.prefPane */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBA1FF961B3694FB00ED60D6 /* JsonPreferences */ = {
+			isa = PBXGroup;
+			children = (
+				DBA1FF991B3694FB00ED60D6 /* JsonPreferences.h */,
+				DBA1FF9B1B3694FB00ED60D6 /* JsonPreferences.m */,
+				DBA1FF9D1B3694FB00ED60D6 /* JsonPreferences.tiff */,
+				DBA1FF9F1B3694FB00ED60D6 /* JsonPreferences.xib */,
+				DBA1FF971B3694FB00ED60D6 /* Supporting Files */,
+			);
+			path = JsonPreferences;
+			sourceTree = "<group>";
+		};
+		DBA1FF971B3694FB00ED60D6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBA1FF981B3694FB00ED60D6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DBA1FF911B3694FB00ED60D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA1FF9A1B3694FB00ED60D6 /* JsonPreferences.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DBA1FF931B3694FB00ED60D6 /* JsonPreferences */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBA1FFA41B3694FB00ED60D6 /* Build configuration list for PBXNativeTarget "JsonPreferences" */;
+			buildPhases = (
+				DBA1FF8F1B3694FB00ED60D6 /* Sources */,
+				DBA1FF901B3694FB00ED60D6 /* Frameworks */,
+				DBA1FF911B3694FB00ED60D6 /* Headers */,
+				DBA1FF921B3694FB00ED60D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JsonPreferences;
+			productName = JsonPreferences;
+			productReference = DBA1FF941B3694FB00ED60D6 /* JsonPreferences.prefPane */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBA1FF8B1B3694FB00ED60D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Surinder Singh";
+				TargetAttributes = {
+					DBA1FF931B3694FB00ED60D6 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
+			};
+			buildConfigurationList = DBA1FF8E1B3694FB00ED60D6 /* Build configuration list for PBXProject "JsonPreferences" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DBA1FF8A1B3694FB00ED60D6;
+			productRefGroup = DBA1FF951B3694FB00ED60D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBA1FF931B3694FB00ED60D6 /* JsonPreferences */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBA1FF921B3694FB00ED60D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA1FFA11B3694FB00ED60D6 /* JsonPreferences.xib in Resources */,
+				DBA1FF9E1B3694FB00ED60D6 /* JsonPreferences.tiff in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBA1FF8F1B3694FB00ED60D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA1FF9C1B3694FB00ED60D6 /* JsonPreferences.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DBA1FF9F1B3694FB00ED60D6 /* JsonPreferences.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBA1FFA01B3694FB00ED60D6 /* Base */,
+			);
+			name = JsonPreferences.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DBA1FFA21B3694FB00ED60D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DBA1FFA31B3694FB00ED60D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DBA1FFA51B3694FB00ED60D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = JsonPreferences/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = prefPane;
+			};
+			name = Debug;
+		};
+		DBA1FFA61B3694FB00ED60D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = JsonPreferences/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = prefPane;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBA1FF8E1B3694FB00ED60D6 /* Build configuration list for PBXProject "JsonPreferences" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBA1FFA21B3694FB00ED60D6 /* Debug */,
+				DBA1FFA31B3694FB00ED60D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBA1FFA41B3694FB00ED60D6 /* Build configuration list for PBXNativeTarget "JsonPreferences" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBA1FFA51B3694FB00ED60D6 /* Debug */,
+				DBA1FFA61B3694FB00ED60D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DBA1FF8B1B3694FB00ED60D6 /* Project object */;
+}
