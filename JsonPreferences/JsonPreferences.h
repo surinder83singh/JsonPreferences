@@ -12,6 +12,4 @@
 
 - (void)mainViewDidLoad;
 
--(IBAction) buttonPressed: (id) btn;
-
 @end
