@@ -1,0 +1,11 @@
+{
+    "buttons": [{
+        "text":"Start Mongodb",
+        "action":"/Users/surindersingh/Documents/mongodb-osx-x86_64-3.1.2/bin/mongod",
+        "args":["-dbpath", "/Users/surindersingh/Documents/dev/mongo-data/db"]
+    },{
+        "text":"Start server",
+        "action":"/test2/",
+        "args":[]
+    }]
+}

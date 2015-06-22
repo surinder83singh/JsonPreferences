@@ -14,11 +14,13 @@
 
 - (void)mainViewDidLoad
 {
+    /*
     NSLog(@"c %@", self.tasks );
     if ([self.tasks count] == 0){
         
         self.tasks = [[NSMutableArray alloc] initWithCapacity:10];
     }
+    */
     
     [self buildUI: @"/Users/surindersingh/Documents/dev/p2.json"];
 }
@@ -35,24 +37,19 @@
     NSString *action = [config objectForKey:@"action"];
     NSArray  *args   = [config objectForKey:@"args"];
     NSLog(@"action: %@, args: %@", action, args);
-    //return;
 
     NSPipe *pipe = [NSPipe pipe];
-    //NSFileHandle *file = pipe.fileHandleForReading;
-    
     NSTask *task = [[NSTask alloc] init];
-    //  mongod -dbpath /Users/surindersingh/Documents/dev/mongo-data/db
-    task.launchPath = action;//@"/Users/surindersingh/Documents/mongodb-osx-x86_64-3.1.2/bin/mongod";
+
+    task.launchPath = action;
     task.arguments = args;
     task.standardOutput = pipe;
     
     [task launch];
     bool isRunning = [task isRunning];
-    [self.tasks insertObject:task atIndex:(NSUInteger)[btn tag] ];
-     NSLog(@"cccc %@", self.tasks );
-    
-    //NSData *data = [file readData];
-    //[file closeFile];
+    //[self.tasks insertObject:task atIndex:(NSUInteger)[btn tag] ];
+    NSLog(@"cccc %@", self.tasks );
+
     
     // file handler for pipe
     NSFileHandle *handle = [task.standardOutput fileHandleForReading];
@@ -127,7 +124,6 @@
     y = self.mainView.bounds.size.height - ((height)*i) - 5;
 
     NSButton *btn = [[NSButton alloc] initWithFrame:NSMakeRect(x, y, width, height)];
-    //NSLog(@"ssss tag: %d y: %d, i: %d, t: %d", tag, y, i, tag/15);
 
     [btn setTitle:[data objectForKey:@"text"]];
     [btn setBezelStyle:NSRoundedBezelStyle];

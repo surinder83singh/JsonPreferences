@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB522F781B38BD5A009EFF03 /* p2.json in Resources */ = {isa = PBXBuildFile; fileRef = DB522F771B38BD5A009EFF03 /* p2.json */; };
 		DBA1FF9A1B3694FB00ED60D6 /* JsonPreferences.h in Headers */ = {isa = PBXBuildFile; fileRef = DBA1FF991B3694FB00ED60D6 /* JsonPreferences.h */; };
 		DBA1FF9C1B3694FB00ED60D6 /* JsonPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA1FF9B1B3694FB00ED60D6 /* JsonPreferences.m */; };
 		DBA1FF9E1B3694FB00ED60D6 /* JsonPreferences.tiff in Resources */ = {isa = PBXBuildFile; fileRef = DBA1FF9D1B3694FB00ED60D6 /* JsonPreferences.tiff */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB522F771B38BD5A009EFF03 /* p2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = p2.json; sourceTree = "<group>"; };
 		DBA1FF941B3694FB00ED60D6 /* JsonPreferences.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JsonPreferences.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA1FF981B3694FB00ED60D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBA1FF991B3694FB00ED60D6 /* JsonPreferences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JsonPreferences.h; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 		DBA1FF961B3694FB00ED60D6 /* JsonPreferences */ = {
 			isa = PBXGroup;
 			children = (
+				DB522F771B38BD5A009EFF03 /* p2.json */,
 				DBA1FF991B3694FB00ED60D6 /* JsonPreferences.h */,
 				DBA1FF9B1B3694FB00ED60D6 /* JsonPreferences.m */,
 				DBA1FF9D1B3694FB00ED60D6 /* JsonPreferences.tiff */,
@@ -138,6 +141,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB522F781B38BD5A009EFF03 /* p2.json in Resources */,
 				DBA1FFA11B3694FB00ED60D6 /* JsonPreferences.xib in Resources */,
 				DBA1FF9E1B3694FB00ED60D6 /* JsonPreferences.tiff in Resources */,
 			);
@@ -286,6 +290,7 @@
 				DBA1FFA61B3694FB00ED60D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
