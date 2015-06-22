@@ -16,6 +16,8 @@
 
 /* Begin PBXFileReference section */
 		DB522F771B38BD5A009EFF03 /* p2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = p2.json; sourceTree = "<group>"; };
+		DB522F791B38C05D009EFF03 /* JsonPereference-Pane-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "JsonPereference-Pane-icon.png"; sourceTree = "<group>"; };
+		DB522F7A1B38C05D009EFF03 /* JsonPreferencePane-ui.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "JsonPreferencePane-ui.png"; sourceTree = "<group>"; };
 		DBA1FF941B3694FB00ED60D6 /* JsonPreferences.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JsonPreferences.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA1FF981B3694FB00ED60D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBA1FF991B3694FB00ED60D6 /* JsonPreferences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JsonPreferences.h; sourceTree = "<group>"; };
@@ -54,6 +56,8 @@
 		DBA1FF961B3694FB00ED60D6 /* JsonPreferences */ = {
 			isa = PBXGroup;
 			children = (
+				DB522F791B38C05D009EFF03 /* JsonPereference-Pane-icon.png */,
+				DB522F7A1B38C05D009EFF03 /* JsonPreferencePane-ui.png */,
 				DB522F771B38BD5A009EFF03 /* p2.json */,
 				DBA1FF991B3694FB00ED60D6 /* JsonPreferences.h */,
 				DBA1FF9B1B3694FB00ED60D6 /* JsonPreferences.m */,
