@@ -10,8 +10,15 @@
 
 @implementation JsonPreferences
 
+
+
 - (void)mainViewDidLoad
 {
+    NSLog(@"c %@", self.tasks );
+    if ([self.tasks count] == 0){
+        
+        self.tasks = [[NSMutableArray alloc] initWithCapacity:10];
+    }
     
     [self buildUI: @"/Users/surindersingh/Documents/dev/p2.json"];
 }
@@ -25,6 +32,54 @@
 
 - (void) runCommand:(NSDictionary *) config  btnId: (id) btn{
     
+    NSString *action = [config objectForKey:@"action"];
+    NSArray  *args   = [config objectForKey:@"args"];
+    NSLog(@"action: %@, args: %@", action, args);
+    //return;
+
+    NSPipe *pipe = [NSPipe pipe];
+    //NSFileHandle *file = pipe.fileHandleForReading;
+    
+    NSTask *task = [[NSTask alloc] init];
+    //  mongod -dbpath /Users/surindersingh/Documents/dev/mongo-data/db
+    task.launchPath = action;//@"/Users/surindersingh/Documents/mongodb-osx-x86_64-3.1.2/bin/mongod";
+    task.arguments = args;
+    task.standardOutput = pipe;
+    
+    [task launch];
+    bool isRunning = [task isRunning];
+    [self.tasks insertObject:task atIndex:(NSUInteger)[btn tag] ];
+     NSLog(@"cccc %@", self.tasks );
+    
+    //NSData *data = [file readData];
+    //[file closeFile];
+    
+    // file handler for pipe
+    NSFileHandle *handle = [task.standardOutput fileHandleForReading];
+    [handle setReadabilityHandler:^(NSFileHandle *aHandle) {
+        NSData *data = [aHandle availableData];
+        NSString *log = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        NSLog(@"Task console output: %@", log);
+    }];
+    
+    [task setTerminationHandler:^(NSTask *aTask) {
+        if ([aTask terminationStatus] != 0 ) {
+            NSLog(@"[Error] Task error");
+        }
+    }];
+    
+    //NSString *grepOutput = [[NSString alloc] initWithData: data encoding: NSUTF8StringEncoding];
+    //NSLog (@"grep returned:\n%@", grepOutput);
+
+    //NSAlert *alert = [NSAlert init];
+    //[alert setInformativeText: grepOutput];
+    //[alert runModal];
+    NSButton *b = (NSButton *)btn;
+    if (isRunning) {
+        [b setTitle: [NSString stringWithFormat:@"%@ - %@", [b title],  @"Running"]];
+    }
+    
+
 }
 
 - (NSString *) readFile: (NSString*) path{
@@ -60,7 +115,7 @@
     int x = 20;
     int y;
 
-    int width = 130;
+    int width = 180;
     int height = 22;
     int i = tag;
 
@@ -76,7 +131,7 @@
 
     [btn setTitle:[data objectForKey:@"text"]];
     [btn setBezelStyle:NSRoundedBezelStyle];
-    [btn setTag:tag];
+    [btn setTag:tag-1];
     [btn setTarget:self];
     [btn setAction:@selector(buttonPressed:)];
     [self.mainView addSubview: btn ];}

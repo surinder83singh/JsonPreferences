@@ -9,7 +9,8 @@
 #import <PreferencePanes/PreferencePanes.h>
 
 @interface JsonPreferences : NSPreferencePane
-   @property NSDictionary *json;
+    @property NSDictionary *json;
+    @property NSMutableArray *tasks;
 - (void)mainViewDidLoad;
 
 @end
