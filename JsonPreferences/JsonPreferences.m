@@ -53,7 +53,7 @@
             //[b setTitle:[button objectForKey:@"text"]];
             //[b set];
             //NSLog(@"button %@ name: %@", b, [NSString stringWithFormat:@"b%i", i]);
-            [self buildButton:button];
+            [self buildButton:button buttonTag:i];
             i++;
         }
     }else{
@@ -61,16 +61,21 @@
     }
 }
 
-- (void) buildButton: (NSDictionary *const) data{
+- (void) buildButton: (NSDictionary *const) data buttonTag:(int) tag{
     int x = 100; //possition x
     int y = 100; //possition y
     
     int width = 130;
     int height = 40;
     
+    y = 200;//(height+5)*tag;
+    
+    NSLog(@"ssss i: %d y: %d", tag, y);
+    
     NSButton *myButton = [[NSButton alloc] initWithFrame: NSMakeRect(x, y, width, height)];
-    [self.mainView addSubview: myButton];
+    [self.mainView addSubview:myButton ];//positioned:(NSWindowOrderingMode) relativeTo:<#(NSView *)#>: ];
     [myButton setTitle:[data objectForKey:@"text"]];
+    //[myButton setTag:tag];
     [myButton setButtonType:NSMomentaryLightButton]; //Set what type button You want
     [myButton setBezelStyle:NSRoundedBezelStyle]; //Set what style You want
     
