@@ -18,3 +18,9 @@ see the following JSON
 }
 ```
 
+icon ->
+
+![JsonPereference-Pane-icon](https://raw.githubusercontent.com/surinder83singh/JsonPreferences/master/JsonPreferences/JsonPereference-Pane-icon.png)
+
+UI ->
+![JsonPreferencePane-ui](https://raw.githubusercontent.com/surinder83singh/JsonPreferences/master/JsonPreferences/JsonPreferencePane-ui.png)
