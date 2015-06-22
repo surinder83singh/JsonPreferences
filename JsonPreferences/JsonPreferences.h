@@ -9,7 +9,7 @@
 #import <PreferencePanes/PreferencePanes.h>
 
 @interface JsonPreferences : NSPreferencePane
-
+   @property NSDictionary *json;
 - (void)mainViewDidLoad;
 
 @end
