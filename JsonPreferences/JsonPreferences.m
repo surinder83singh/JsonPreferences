@@ -17,7 +17,14 @@
 }
 
 -(IBAction) buttonPressed: (id) btn{
-    NSLog(@"button pressed");
+    NSArray *buttons    =  [self.json objectForKey:@"buttons"];
+    NSDictionary *config = [buttons objectAtIndex: (NSInteger) [btn tag]];
+    NSLog(@"button pressed, tag:%ld, config: %@", (long)[btn tag], config);
+    [self runCommand: config btnId: btn];
+}
+
+- (void) runCommand:(NSDictionary *) config  btnId: (id) btn{
+    
 }
 
 - (NSString *) readFile: (NSString*) path{
@@ -31,12 +38,12 @@
     NSData *jsonData    = [jsonString dataUsingEncoding: NSUTF8StringEncoding];
     //NSLog(@"jsonData: %@", jsonData);
     NSError *error      = nil;
-    NSDictionary *json  = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&error];
-    NSLog(@"parsedData: %@", json);
+    self.json           = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&error];
+    NSLog(@"parsedData: %@", self.json);
 
-    if (json) {
-        NSArray *buttons    =  [json objectForKey:@"buttons"];
-        NSLog(@" %@ ", json);
+    if (self.json) {
+        NSArray *buttons    =  [self.json objectForKey:@"buttons"];
+        NSLog(@" %@ ", self.json);
         int i = 1;
         for (NSDictionary *button in buttons) {
             //NSLog(@"Text: %@ ", [button objectForKey:@"text"]);
@@ -50,8 +57,8 @@
 }
 
 - (void) buildButton: (NSDictionary *const) data buttonTag:(int) tag{
-    int x = 20; //possition x
-    int y; //possition y
+    int x = 20;
+    int y;
 
     int width = 130;
     int height = 22;
@@ -62,19 +69,16 @@
         i = 1;
     }
     x = x + ((width + 10) * (tag/15));
-
     y = self.mainView.bounds.size.height - ((height)*i) - 5;
 
-    
+    NSButton *btn = [[NSButton alloc] initWithFrame:NSMakeRect(x, y, width, height)];
+    //NSLog(@"ssss tag: %d y: %d, i: %d, t: %d", tag, y, i, tag/15);
 
-    NSButton *myButton = [[NSButton alloc] initWithFrame:NSMakeRect(x, y, width, height)];
-    NSLog(@"ssss tag: %d y: %d, i: %d, t: %d", tag, y, i, tag/15);
-
-    [myButton setTitle:[data objectForKey:@"text"]];
-    [myButton setBezelStyle:NSRoundedBezelStyle];
-    [myButton setTag:tag];
-    [myButton setTarget:self];
-    [myButton setAction:@selector(buttonPressed:)];
-    [self.mainView addSubview:myButton ];}
+    [btn setTitle:[data objectForKey:@"text"]];
+    [btn setBezelStyle:NSRoundedBezelStyle];
+    [btn setTag:tag];
+    [btn setTarget:self];
+    [btn setAction:@selector(buttonPressed:)];
+    [self.mainView addSubview: btn ];}
 
 @end
